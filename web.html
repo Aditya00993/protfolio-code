@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+
+        <nav>
+            <img src="./images/logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Services</li>
+                <li><a href="#"></a>Portfolio</li>
+                <li><a href="#"></a>Contact</li>
+              
+            </ul>
+        </nav>
+        <div class="name">
+            <p>Web Devloper</p>
+            <h1>Hi, I'm <span> Aditya Raj</span> <br>Bhargav from jodhpur</h1>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div id="about-vol-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div id="about-vol-2">
+                <h1 class="sub">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at sequi eveniet dolore, mollitia fuga illo eius consectetur. Commodi facilis asperiores molestias et laudantium, totam vero error animi dolore dolor?</p>
+           <div class="tab-title">
+            <p class="tab-links active-link" onclick="openTab()">Skills</p>
+            <p class="tab-links"onclick="weTab('#Exprience')">Exprience</p>
+            <p class="tab-links" onclick="openTab('#Education')">Education</p>
+           </div>
+           <div class="tablecontaint active-tab" id="Skills">
+            <ul>
+                <li><span>Ui UX</span><br>Desiginig Web interface</li>
+                <li><span>Web Development</span><br>Website Development</li>
+                <li><span>App Development</span><br>Mobile Application Development</li>
+            </ul>
+           </div>
+           <div class="tablecontaint 1" id="Exprience">
+            <ul>
+                <li><span>2021</span><br>Desiginig Web interface</li>
+                <li><span>2022</span><br>Website Development</li>
+                <li><span>2023</span><br>Mobile Application Development</li>
+            </ul>
+           </div>
+           <div class="tablecontaint"id="Education">
+            <ul>
+                <li><span>Bscit</span><br>Bachelor of science in information technology</li>
+                <li><span>cyber security</span><br>bug bounty & penentration testing</li>
+                <li><span>ssc</span><br>64%</li>
+            </ul>
+           </div>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+<script>
+   function openTab(){
+    document.getElementsByClassName("tablecontaint");
+   }
+
+
+</script>
+</body>
+</html>

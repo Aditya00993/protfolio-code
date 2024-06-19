@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poopins',sans-serif;
+
+}
+body{
+   background:#080808;
+
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+  
+    background: url(/images/background.jpg);
+   background-size: cover;
+    background-position:center;
+   
+ 
+}
+.container{
+    padding-top: 10;
+    padding-left: 10%;
+    padding-bottom: 10;
+    padding-right: 10%s;
+    
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style:none ;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    }
+    nav ul li  ::after{
+        content: '';
+        height: 3px;
+        cursor: alias;
+        width: 0;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li:hover::after{
+        cursor: pointer;
+        width: 100%;
+        content: '';
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+       
+    }
+    .name{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .name h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .name h1 span{
+        color: #ff004f;
+
+    }
+    .about{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #about-vol-1{
+        flex-basis: 35%;
+    }
+    #about-vol-1 img{
+width: 100%;
+border-radius: 15px;
+    }
+    #about-vol-2{
+        flex-basis: 60%;
+    }
+    .sub{
+        font-size: 60px;
+        font-weight: 600;
+        color: white;
+    }
+    .tab-title{
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    .tab-links{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .tab-links::after{
+        content: '';
+        cursor: pointer;
+        width: 0%;
+        content: '';
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    
+    .tab-links:hover:after{
+        content: '';
+        cursor: pointer;
+        width: 100%;
+        content: '';
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .tablecontaint ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    .tablecontaint ul li span{
+        color: #b54769;
+        font-size: 14px;
+    }
+    .tablecontaint:hover{
+      display:block
+    }
+   
